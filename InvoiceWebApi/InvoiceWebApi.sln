@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceWebApi", "InvoiceWebApi.csproj", "{75B4F117-7926-4857-A160-5C1E5A5B7E60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceMVC", "..\InvoiceMVC\InvoiceMVC.csproj", "{D5F6DD53-A68A-44B1-8121-75AB8B2FC289}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75B4F117-7926-4857-A160-5C1E5A5B7E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75B4F117-7926-4857-A160-5C1E5A5B7E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75B4F117-7926-4857-A160-5C1E5A5B7E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75B4F117-7926-4857-A160-5C1E5A5B7E60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5F6DD53-A68A-44B1-8121-75AB8B2FC289}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5F6DD53-A68A-44B1-8121-75AB8B2FC289}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5F6DD53-A68A-44B1-8121-75AB8B2FC289}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5F6DD53-A68A-44B1-8121-75AB8B2FC289}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC2EEC3B-69C5-4C95-BD1B-07CD4BC7E4D1}
+	EndGlobalSection
+EndGlobal

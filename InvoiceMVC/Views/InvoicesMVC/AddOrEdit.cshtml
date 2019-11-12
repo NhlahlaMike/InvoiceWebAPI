@@ -1,0 +1,67 @@
+﻿@model InvoiceMVC.Models.MvcInvoiceModel
+@{
+    /**/
+
+    ViewBag.Title = "AddOrEdit";
+}
+<br />
+<br />
+<h3>AddOrEdit</h3>
+<br />
+@using (Html.BeginForm("AddOrEdit", "InvoicesMVC", FormMethod.Post))
+{
+    @Html.HiddenFor(model => model.Id)
+    <div class="form-group row">
+        <div class="col-sm-1">
+            @Html.LabelFor(model => model.InvoiceNo, new { @class = "control-label col-xs-3 mr-2 pt-2" })
+        </div>
+        <div class="col-md-6">
+            @Html.EditorFor(model => model.InvoiceNo, new { htmlAttributes = new { @class = "form-control input-group" } })
+            @Html.ValidationMessageFor(model => model.InvoiceNo,"",new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-1">
+            @Html.LabelFor(model => model.QTY, new { @class = "control-label col-xs-3 mr-2 pt-2" })
+        </div>
+        <div class="col-md-6">
+            @Html.EditorFor(model => model.QTY, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.QTY)
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-1">
+            @Html.LabelFor(model => model.Description, new { @class = "control-label col-xs-3 mr-2 pt-2" })
+        </div>
+        <div class="col-md-6">
+            @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Description)
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-1">
+            @Html.LabelFor(model => model.Unit_Price, new { @class = "control-label col-xs-4 mr-2 pt-2" })
+        </div>
+        <div class="col-md-6">
+            @Html.EditorFor(model => model.Unit_Price, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Unit_Price)
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-1">
+            @Html.LabelFor(model => model.Amount, new { @class = "control-label mr-2 pt-2" })
+        </div>
+        <div class="col-md-6">
+            @Html.EditorFor(model => model.Amount, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Amount)
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="submit" class="btn btn-success" />
+        <input type="button" value="Reset" class="btn btn-warning" />
+    </div>
+
+}
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}
